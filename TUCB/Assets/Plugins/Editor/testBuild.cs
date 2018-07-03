@@ -22,4 +22,11 @@ public class testBuild {
 	{
 		Debug.Log ("Build Over,Path is :"+path);
 	}
+
+	[PostProcessScene(1)]
+	public static void OnBuildScene()
+	{
+		Debug.Log ("Build Scene Now");
+		
+	}
 }
